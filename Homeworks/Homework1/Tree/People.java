@@ -16,10 +16,6 @@ public class People {
         this.patronymic = p;
     }
 
-    People() {
-
-    }
-
     public String getSurname() {
         return surname;
     }
@@ -55,17 +51,19 @@ public class People {
 class Parent extends People {
     String surname = "Петров";
 
-    Parent(String s, String n, String p) {
+    Parent(String n, String p) {
         super(n, p);
-        // setSurname(s);
+        setSurname(surname);
+
     }
 
-    @Override
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
 }
 
-// class Child extends People {
+class Child extends Parent {
 
-// }
+    Child(String n, String p) {
+        super(n, p);
+        setSurname(surname);
+    }
+
+}
