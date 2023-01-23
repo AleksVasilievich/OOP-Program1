@@ -6,6 +6,7 @@ public class Program {
         Parent pr1 = new Parent();
         Child cl1 = new Child();
 
+        System.out.println("Abstract");
         System.out.println("------------------");
         System.out.println("ФИО - Родитель");
         System.out.println("------------------");
