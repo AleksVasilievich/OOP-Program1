@@ -4,21 +4,13 @@ public abstract class People {
 
     String surname = "Петров";
 
-    public void setSurname() {
+    // abstract void setSurname(String surname);
 
-    }
+    // abstract void setName(String name);
 
-    public void setName() {
+    // abstract void setPatronymic(String patrontmic);
 
-    }
-
-    public void setPatronymic() {
-
-    }
-
-    void info() {
-
-    }
+    abstract void info();
 
 }
 
@@ -33,6 +25,7 @@ class Parent extends People {
         System.out.println("Имя: " + name);
         System.out.println("Отчество: " + patronymic);
     }
+
 }
 
 class Child extends People {
