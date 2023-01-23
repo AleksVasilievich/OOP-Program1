@@ -1,4 +1,4 @@
-package Lesson_09.Ex007;
+package Lectures.Lecture3.Ex007;
 
 public abstract class Ingredient {
     public String brand;

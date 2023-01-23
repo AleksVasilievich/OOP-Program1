@@ -1,4 +1,4 @@
-package Lesson_09.Ex005;
+package Lectures.Lecture3.Ex005;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -42,7 +42,8 @@ public class Program {
 
         // List<Worker> db = new ArrayList<>();
         // for (int i = 0; i < 5; i++) {
-        //     db.add(new Worker("Имя " + i, "Фамилия " + i, r.nextInt(18, 31), r.nextInt(10000)));
+        // db.add(new Worker("Имя " + i, "Фамилия " + i, r.nextInt(18, 31),
+        // r.nextInt(10000)));
         // }
         // System.out.println(db);
 
@@ -52,13 +53,12 @@ public class Program {
 
         // #endregion
 
-        //#region
+        // #region
 
         Worker w1 = new Worker("Имя", "Фамилия", 20, 20);
         Worker w2 = new Worker("Имя", "Фамилия", 20, 20);
-        
 
-        //#endregion
+        // #endregion
 
     }
 }

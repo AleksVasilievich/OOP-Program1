@@ -1,10 +1,10 @@
-package Homeworks.Homework2.Tree2;
+package Homeworks.Homework2.Tree2_1;
 
 public class Program {
     public static void main(String[] args) {
 
-        Parent pr1 = new Parent(null, null);
-        Child cl1 = new Child(null, null);
+        Parent pr1 = new Parent();
+        Child cl1 = new Child();
 
         System.out.println("------------------");
         System.out.println("ФИО - Родитель");

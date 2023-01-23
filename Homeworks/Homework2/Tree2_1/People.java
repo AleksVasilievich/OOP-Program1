@@ -1,24 +1,31 @@
-package Homeworks.Homework2.Tree2;
+package Homeworks.Homework2.Tree2_1;
 
-public interface People {
+public abstract class People {
 
-    public void setSurname(String surname);
+    String surname = "Петров";
 
-    public void setName(String name);
+    public void setSurname() {
 
-    public void setPatronymic(String patronymic);
+    }
 
-    void info();
+    public void setName() {
+
+    }
+
+    public void setPatronymic() {
+
+    }
+
+    void info() {
+
+    }
+
 }
 
-class Parent extends PeoplePetrov {
-    String surname = "Петров";
+class Parent extends People {
+
     String name = "Иван";
     String patronymic = "Сергеевич";
-
-    Parent(String n, String p) {
-        super(n, p);
-    }
 
     @Override
     public void info() {
@@ -28,14 +35,10 @@ class Parent extends PeoplePetrov {
     }
 }
 
-class Child extends PeoplePetrov {
+class Child extends People {
+
     String name = "Генадий";
     String patronymic = "Иванович";
-
-    Child(String n, String p) {
-        super(n, p);
-
-    }
 
     @Override
     public void info() {

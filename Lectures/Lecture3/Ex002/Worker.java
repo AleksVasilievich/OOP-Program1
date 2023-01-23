@@ -1,4 +1,4 @@
-package Lesson_09.Ex002;
+package Lectures.Lecture3.Ex002;
 
 import java.util.Iterator;
 
@@ -34,16 +34,16 @@ public class Worker implements Iterator<String> {
     public String next() {
         switch (index) {
             case 1:
-                //return firstName;
+                // return firstName;
                 return String.format("firstName: %s", firstName);
             case 2:
-                //return lastName;
+                // return lastName;
                 return String.format("lastName: %s", lastName);
             case 3:
-                //return age;
+                // return age;
                 return String.format("age: %d", age);
             default:
-                //return salary;
+                // return salary;
                 return String.format("salary: %d", salary);
 
         }

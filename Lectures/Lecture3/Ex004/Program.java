@@ -1,6 +1,6 @@
-package Lesson_09.Ex004;
+package Lectures.Lecture3.Ex004;
 
-import Lesson_09.Ex004.ExBeverage.*;
+import Lectures.Lecture3.Ex004.ExBeverage.*;
 
 // три вода
 public class Program {
