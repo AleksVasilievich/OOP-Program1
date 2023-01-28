@@ -1,27 +1,8 @@
-package Homeworks.Homework2.Tree2_1;
+package Homeworks.Homework3.WorldAnimals3;
 
 public class Program {
+
     public static void main(String[] args) {
-
-        // People pr1 = new People() {
-
-        // @Override
-        // void parent(){
-        // System.out.println(surname);
-        // }
-
-        // @Override
-        // void info(){
-        // System.out.println(surname);
-
-        // }
-
-        // @Override
-        // void child(){
-        // System.out.println(surname);
-        // }
-
-        // }
 
         Parent pr1 = new Parent();
         Child cl1 = new Child();
