@@ -1,4 +1,4 @@
-package Homeworks.Homework3.Tree3;
+package Homeworks.Homework4.Tree4;
 
 public class Program {
 
@@ -11,17 +11,20 @@ public class Program {
         String surname_child = "Петров";
         String name_child = "Юрий";
         String patronymic_child = "Иванович";
+        // Или Вводим ID Фамильной Династии
+        int surname_perent_num = 1;
+        int surname_child_num = 2;
 
         System.out.println();
-        System.out.println("Стандартные интерфейсы");
+        System.out.println("Обобщения");
         System.out.println();
-        // Сравниваем Фамилии с помощью стандартного интерфейса
-        People pr2 = (a) -> (a == surname_perent);
-        if (pr2.test(surname_child)) {
+        // Сравниваем Фамилии или ID на выбор с помощью Обопщения
+        People<Integer> pr2 = (a) -> (a == surname_perent_num);
+        if (pr2.test(surname_child_num)) {
             System.out.println("Фамилии совпадают");
 
-            Parent pr1 = new Parent(surname_perent, name_perent, patronymic_perent);
-            Child cl1 = new Child(surname_child, name_child, patronymic_child);
+            Parent<String> pr1 = new Parent<>(surname_perent, name_perent, patronymic_perent);
+            Child<String> cl1 = new Child<>(surname_child, name_child, patronymic_child);
 
             System.out.println("------------------");
             System.out.println("ФИО - Родитель");
@@ -38,11 +41,11 @@ public class Program {
 
         }
 
-        if (!pr2.test(surname_child)) {
-            System.out.println("Фамилии не совпадают");
+        if (!pr2.test(surname_child_num)) {
+            System.out.println("Фамилии не совпадают или Однофамильцы без родственных связей");
 
-            Parent pr1 = new Parent(surname_perent, "Иван", "Сергеевич");
-            Child cl1 = new Child(surname_child, "Юрий", "Иванович");
+            Parent<String> pr1 = new Parent<>(surname_perent, "Иван", "Сергеевич");
+            Child<String> cl1 = new Child<>(surname_child, "Юрий", "Иванович");
 
             System.out.println("------------------");
             System.out.println("ФИО - 1");

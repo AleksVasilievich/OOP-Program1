@@ -1,16 +1,11 @@
 package Drafts.Test1;
 
-// Андрей Начевный
-
-// 2 месяца назад
-// Для проверки в IDE
-
-class Robot {
+class Program {
     private int X;
     private int Y;
     Direction direction;
 
-    public Robot(int X, int Y, Direction direction) {
+    public Program(int X, int Y, Direction direction) {
         this.X = X;
         this.Y = Y;
         this.direction = direction;
