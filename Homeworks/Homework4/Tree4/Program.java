@@ -11,14 +11,14 @@ public class Program {
         String surname_child = "Петров";
         String name_child = "Юрий";
         String patronymic_child = "Иванович";
-        // Или Вводим ID Фамильной Династии
+        // И Вводим ID Фамильной Династии
         int surname_perent_num = 1;
         int surname_child_num = 2;
 
         System.out.println();
         System.out.println("Обобщения");
         System.out.println();
-        // Сравниваем Фамилии или ID на выбор с помощью Обопщения
+        // Сравниваем Фамилии и ID на выбор с помощью Обопщения
         People<Integer> pr2 = (a) -> (a == surname_perent_num);
         if (pr2.test(surname_child_num)) {
             System.out.println("Фамилии совпадают");
